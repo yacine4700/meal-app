@@ -82,4 +82,4 @@ This project is licensed under the [MIT License](LICENSE).
 
 ## Contact
 
-For questions or feedback, please reach out to [yacine.kouzrit93@gmail.com].
+For questions or feedback, please reach out to [yacinalg58@gmail.com].
