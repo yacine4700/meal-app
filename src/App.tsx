@@ -8,6 +8,7 @@ import Search from './pages/Search'
 import Category from './pages/Category'
 import ScrollToTop from './components/ScrollToTop'
 import Footer from './components/Footer'
+import Favorites from './pages/Favorites'
 
 
 function App() {
@@ -22,6 +23,7 @@ function App() {
         <Route path="/meal/:idMeal" element={<MealDetail />} />
         <Route path="/search" element={<Search />} />
         <Route path="/category/:category" element={<Category />} />
+        <Route path='/favorites' element={<Favorites/>} />
         {/* <Route path="/category/:category" element={<Category />} /> */}
         {/* <Route path="/meal/:id" element={<MealDetail />} /> */}
         {/* <Route path="/search" element={<Search />} /> */}

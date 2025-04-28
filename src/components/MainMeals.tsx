@@ -18,7 +18,7 @@ function MainMeals({category, lenght}: Category) {
   return (
     <div className="mt-5">
         {loading ? (
-            <SkeletonComponent/>
+            <SkeletonComponent type={"card"}/>
         ) : error ? (
             <div>{error}</div>
         ) : (
@@ -29,7 +29,7 @@ function MainMeals({category, lenght}: Category) {
                 </Link>
                 </span>
         
-                <div className={`mt-3 grid md:grid-cols-3 sm:grid-cols-1 lg:grid-cols-4 gap-3`}>
+                <div className={`mt-3 grid md:grid-cols-2 sm:grid-cols-1 lg:grid-cols-4 gap-3`}>
                     {meals.slice(0, lenght).map((meal) => (
                         <div key={meal.idMeal} >
                             <MealCard {...meal} /> {/* Spread the meal object to pass all its properties */}

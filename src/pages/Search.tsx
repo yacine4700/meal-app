@@ -33,7 +33,7 @@ function Search() {
   };
   return (
     <div className="p-4 max-w-6xl mx-auto">
-      <div className="flex justify-between items-center mb-4">
+      <div className="flex sm:flex-col justify-between items-center mb-4">
           <h1 className='text-2xl'>
             Search results for: <span className="text-blue-500 font-bold">{searchQuery}</span>
           </h1>
@@ -111,7 +111,7 @@ function Search() {
       </div>
 
       {isLoading ? (
-        <SkeletonComponent />
+        <SkeletonComponent type={'card'} />
       ) : results.length === 0? (
         <p className="text-red-500">No meals found.</p>
       ) : error? (

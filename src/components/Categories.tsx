@@ -1,7 +1,7 @@
 import { useCategories } from "@/hooks/useCategoryMeals";
 import React from "react";
 import { Link } from "react-router-dom";
-import { Skeleton } from "./ui/skeleton";
+import SkeletonComponent from "./Skeleton";
 
 
 const Coponents:React.FC =  () => {
@@ -11,12 +11,7 @@ const Coponents:React.FC =  () => {
       <h1 className="text-2xl font-bold">Categories</h1>
       <div className="flex flex-wrap gap-4 mb-3">
         {loading? (
-          Array.from({ length: 6 }).map((_, idx) => (
-            <Skeleton
-              key={idx}
-              className="h-10 w-32 rounded-full bg-gray-200"
-            />
-          ))
+          <SkeletonComponent type={"list"} />
         ) : error ? (
           <div className="text-red-500">{error}</div>
         ) : (
