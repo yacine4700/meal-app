@@ -9,7 +9,7 @@ const Favorites = () => {
     }
   return (
     
-    <div className="flex flex-col items-center justify-center mt-4 bg-gray-100 w-full">
+    <div className="flex flex-col items-center justify-center mt-4 bg-gray-100">
         <h1 className="text-3xl font-bold mb-4">Favorites</h1>
         <p className="text-lg mb-4">You have {favoritesCounter} favorite meals.</p>
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
